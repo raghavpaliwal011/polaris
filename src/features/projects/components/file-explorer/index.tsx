@@ -11,7 +11,7 @@ import React from "react"
 import { useProject } from "../../hooks/use-projects"
 import { useCreateFolder,useCreateFile, useFolderContents } from "../../hooks/use-files"
 export const FileExplorer = ({ projectId }: { projectId: Id<"projects"> }) => {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen, setIsOpen] = useState(true)
     const project = useProject(projectId)
     const [collapseKey,setCollapseKey] = useState(0)
     const [creating,setCreating] = useState<"file"|"folder"|null>(

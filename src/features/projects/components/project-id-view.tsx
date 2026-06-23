@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { FaGithub } from "react-icons/fa";
-
+import { EditorView } from "@/features/editor/components/editor-view";
 import { cn } from "@/lib/utils";
 
 import { Id } from "../../../../convex/_generated/dataModel";
@@ -75,7 +75,7 @@ export const ProjectIdView = ({
               <FileExplorer projectId={projectId}/>
             </Allotment.Pane>
             <Allotment.Pane>
-              <p>Editor view</p>
+              <EditorView projectId={projectId}/>
             </Allotment.Pane>
           </Allotment>
         </div>
