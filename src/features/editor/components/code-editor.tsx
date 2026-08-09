@@ -66,3 +66,5 @@ export const CodeEditor = ({
     <div ref={editorRef} className="size-full pl-4 bg-background" />
   );
 };
+
+// just comment :>
