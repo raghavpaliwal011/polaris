@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "@/components/providers";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Authenticated } from "convex/react";
+import { Toaster } from "sonner";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,8 +34,11 @@ export default function RootLayout({
       >
         <Providers>
           {children}
+          <Toaster/>
         </Providers>
       </body>
     </html>
   );
 }
+
+// 9:43:50
