@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Authenticated } from "convex/react";
 import { Toaster } from "sonner";
 
+import "allotment/dist/style.css";
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -40,5 +42,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// 9:43:50
